@@ -24,11 +24,11 @@
   "keywords": [
     "ember-addon",
     "ember-cli-deploy-plugin",
-    "airbrake",
+    "airbrake"
   ],
   "dependencies": {
     "airbrake": "^1.2.0",
-    "ember-cli-deploy-plugin": "^0.2.9",
+    "ember-cli-deploy-plugin": "^0.2.9"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"

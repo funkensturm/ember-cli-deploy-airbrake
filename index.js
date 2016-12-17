@@ -63,9 +63,5 @@ module.exports = {
     });
 
     return new DeployPlugin();
-  },
-
-  isDevelopingAddon: function() {
-    return true;
   }
 };

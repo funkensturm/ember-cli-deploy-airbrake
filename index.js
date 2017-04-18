@@ -1,7 +1,7 @@
 /* jshint node: true */
 'use strict';
 
-var Promise    = require('ember-cli/lib/ext/promise');
+var Promise    = require('rsvp').Promise;
 var DeployPluginBase = require('ember-cli-deploy-plugin');
 
 function airbrakeConfig(context) {
@@ -56,6 +56,7 @@ module.exports = {
             'Notified Airbrake about ' +
             params.env + ' deployment of revision ' + params.rev
           );
+          return Promise.resolve(params);
         }, function(error) {
           return Promise.reject(error);
         });

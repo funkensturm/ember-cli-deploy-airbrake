@@ -1,5 +1,7 @@
 # Ember-cli-deploy-airbrake
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/funkensturm/ember-cli-deploy-airbrake.svg)](https://greenkeeper.io/)
+
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation

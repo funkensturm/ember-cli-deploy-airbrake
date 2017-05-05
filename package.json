@@ -18,7 +18,7 @@
   "author": "Manuel Wiedenmann",
   "license": "MIT",
   "devDependencies": {
-    "ember-cli": "2.9.1",
+    "ember-cli": "2.13.1",
     "ember-cli-release": "^0.2.9"
   },
   "keywords": [
@@ -27,7 +27,7 @@
     "airbrake"
   ],
   "dependencies": {
-    "airbrake": "^1.2.0",
+    "airbrake": "^2.0.0",
     "ember-cli-deploy-plugin": "^0.2.9",
     "rsvp": "^3.5.0"
   },

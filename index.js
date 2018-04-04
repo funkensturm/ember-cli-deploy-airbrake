@@ -1,7 +1,7 @@
 /* jshint node: true */
 'use strict';
 
-var Promise    = require('rsvp').Promise;
+var RSVP             = require('rsvp');
 var DeployPluginBase = require('ember-cli-deploy-plugin');
 
 function airbrakeConfig(context) {
@@ -47,7 +47,7 @@ module.exports = {
         };
 
         var plugin = this;
-        var trackDeployment = Promise.denodeify(
+        var trackDeployment = RSVP.denodeify(
           airbrake.trackDeployment.bind(airbrake)
         );
 
@@ -56,9 +56,9 @@ module.exports = {
             'Notified Airbrake about ' +
             params.env + ' deployment of revision ' + params.rev
           );
-          return Promise.resolve(params);
+          return RSVP.resolve(params);
         }, function(error) {
-          return Promise.reject(error);
+          return RSVP.reject(error);
         });
       }
     });
